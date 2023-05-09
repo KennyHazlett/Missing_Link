@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Missing Link Aquatics & Exotics</title>
+    <link rel="stylesheet" href="product-details.css">
+</head>
+
+<body>
+    <header>
+        <!-- Header and navigation code here -->
+    </header>
+    <main>
+        <section class="product-details">
+            <video class="product-video" autoplay loop muted>
+                <source src="images/example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3 class="product-name">Example Fish</h3>
+            <p class="product-info">Price: $10.00</p>
+            <p class="product-info">Size: Small</p>
+            <p class="product-info">Origin: South America</p>
+            <div class="quantity-dropdown">
+                <label for="quantity">Qty:</label>
+                <select id="quantity" name="quantity" class="quantity-select">
+                    <!-- Options will be generated here -->
+                </select>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            <!-- Additional product details can be added here -->
+        </section>
+    </main>
+    <footer>
+        <!-- Footer code here -->
+    </footer>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/quantityDropdown.js"></script>
+</body>
+
+</html>

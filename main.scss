@@ -1,0 +1,10 @@
+@import '_breakpoints.scss';
+@import '_containers.scss';
+@import '_fluid-scaling.scss';
+@import 'styles.scss';
+
+.menu a {
+    @include for-size(xxs) {
+        font-size: fluidMobile(30);
+    }
+}

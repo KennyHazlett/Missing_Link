@@ -1,0 +1,80 @@
+// Breakpoints
+@mixin for-size($size) {
+    @if $size ==xxs {
+        @media (min-width: 320px) and (max-width: 427px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xs {
+        @media (min-width: 428px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $size ==sm {
+        @media (min-width: 768px) and (max-width: 1023px) {
+            @content;
+        }
+    }
+
+    @else if $size ==md {
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            @content;
+        }
+    }
+
+    @else if $size ==lg {
+        @media (min-width: 1280px) and (max-width: 1535px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xl {
+        @media (min-width: 1536px) and (max-width: 1919px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xxl {
+        @media (min-width: 1920px) {
+            @content;
+        }
+    }
+
+    @else if $size ==sm-up {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size ==md-down {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $size ==md-up {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $size ==lg-down {
+        @media (max-width: 1280px) {
+            @content;
+        }
+    }
+
+    @else if $size ==lg-up {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xl-up {
+        @media (min-width: 1536px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/*
+  Scales pixel values linearly based on ideal (design) view port.
+
+  $value: value to be scaled
+  $min: minimum view port width - Ui won't scale below this value
+  $max: max viewport width - UI won't scale beyond this value
+  $ideal: ideal viewport width - This is the scale width of the design
+*/
+@function fluidPixelScaler($value, $ideal, $min, $max) {
+    @return calc(#{$value} * (clamp(#{$min}, 100vw, #{$max}) / #{$ideal}));
+}
+
+/*
+  Scales pixel values linearly based on ideal DESKTOP (design).
+
+  $value: value to be scaled in pixels
+  $min: (optional) min value to scale to
+  (mobile design ideal is 428px)
+*/
+@function fluidDesktop($value, $min: null) {
+    @if $min {
+        @return max(#{$min}px, #{fluidPixelScaler($value, 1920, 767px, 1920px)});
+    }
+
+    @return fluidPixelScaler($value, 1920, 767px, 1920px);
+}
+
+/*
+  Scales pixel values linearly based on ideal MOBILE (design).
+
+  $value: value to be scaled in pixels
+  $min: (optional) min value to scale to
+  (mobile design ideal is 428px)
+*/
+@function fluidMobile($value, $min: null) {
+    @if $min {
+        @return max(#{$min}px, #{fluidPixelScaler($value, 428, 320px, 767px)});
+    }
+
+    @return fluidPixelScaler($value, 428, 320px, 767px);
+}

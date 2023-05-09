@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Our Collection - Missing Link Aquatics & Exotics</title>
+    <link rel="stylesheet" href="collections.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <a href="index.html" class="logo">
+                    <img src="images/LogoMissingLinksAquatics&Exotics.jpg" alt="Missing Link Aquatics & Exotics" class="logo-image">
+                </a>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="collection.html">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="cart.html">View Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="collection-grid">
+            <!-- Card 1 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <button class="view-details-btn" onclick="viewProductDetails('example-fish')">View Details</button>
+                <div class="quantity-dropdown">
+                    <label for="quantity1">Qty:</label>
+                    <select id="quantity1" name="quantity1" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10, parseInt(document.getElementById('quantity1').value))">Add to Cart</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity2">Qty:</label>
+                    <select id="quantity2" name="quantity2" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00, parseInt(document.getElementById('quantity2').value))">Add to Cart</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>                
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $12.00</p>
+                <p class="collection-info">Size: Medium</p>
+                <p class="collection-info">Origin: Asia</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity3">Qty:</label>
+                    <select id="quantity3" name="quantity3" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 12.00, parseInt(document.getElementById('quantity3').value))">Add to Cart</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $15.00</p>
+                <p class="collection-info">Size: Large</p>
+                <p class="collection-info">Origin: Africa</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity4">Qty:</label>
+                    <select id="quantity4" name="quantity4" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 15.00)">Add to Cart</button>
+            </div>
+            <!-- Card 5 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity5">Qty:</label>
+                    <select id="quantity5" name="quantity5" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 6 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity6">Qty:</label>
+                    <select id="quantity6" name="quantity6" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 7 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $12.00</p>
+                <p class="collection-info">Size: Medium</p>
+                <p class="collection-info">Origin: Asia</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity7">Qty:</label>
+                    <select id="quantity7" name="quantity7" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 12.00)">Add to Cart</button>
+            </div>
+            <!-- Card 8 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $15.00</p>
+                <p class="collection-info">Size: Large</p>
+                <p class="collection-info">Origin: Africa</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity8">Qty:</label>
+                    <select id="quantity8" name="quantity8" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 15.00)">Add to Cart</button>
+            </div>
+            <!-- Card 9 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity9">Qty:</label>
+                    <select id="quantity9" name="quantity9" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 10 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity10">Qty:</label>
+                    <select id="quantity10" name="quantity10" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 11 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $12.00</p>
+                <p class="collection-info">Size: Medium</p>
+                <p class="collection-info">Origin: Asia</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity11">Qty:</label>
+                    <select id="quantity11" name="quantity11" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 12.00)">Add to Cart</button>
+            </div>
+            <!-- Card 12 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $15.00</p>
+                <p class="collection-info">Size: Large</p>
+                <p class="collection-info">Origin: Africa</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity12">Qty:</label>
+                    <select id="quantity12" name="quantity12" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 15.00)">Add to Cart</button>
+            </div>
+            <!-- Card 13 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity13">Qty:</label>
+                    <select id="quantity13" name="quantity13" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 14 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity14">Qty:</label>
+                    <select id="quantity14" name="quantity14" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 15 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $12.00</p>
+                <p class="collection-info">Size: Medium</p>
+                <p class="collection-info">Origin: Asia</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity15">Qty:</label>
+                    <select id="quantity15" name="quantity15" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 12.00)">Add to Cart</button>
+            </div>
+            <!-- Card 16 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $15.00</p>
+                <p class="collection-info">Size: Large</p>
+                <p class="collection-info">Origin: Africa</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity16">Qty:</label>
+                    <select id="quantity16" name="quantity16" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 15.00)">Add to Cart</button>
+            </div>
+            <!-- Card 17 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity17">Qty:</label>
+                    <select id="quantity17" name="quantity17" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 18 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity18">Qty:</label>
+                    <select id="quantity18" name="quantity18" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 19 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $12.00</p>
+                <p class="collection-info">Size: Medium</p>
+                <p class="collection-info">Origin: Asia</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity19">Qty:</label>
+                    <select id="quantity19" name="quantity19" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 12.00)">Add to Cart</button>
+            </div>
+            <!-- Card 20 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $15.00</p>
+                <p class="collection-info">Size: Large</p>
+                <p class="collection-info">Origin: Africa</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity20">Qty:</label>
+                    <select id="quantity20" name="quantity20" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 15.00)">Add to Cart</button>
+            </div>
+            <!-- Card 21 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity21">Qty:</label>
+                    <select id="quantity21" name="quantity22" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 22 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $10.00</p>
+                <p class="collection-info">Size: Small</p>
+                <p class="collection-info">Origin: South America</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity22">Qty:</label>
+                    <select id="quantity22" name="quantity22" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 10.00)">Add to Cart</button>
+            </div>
+            <!-- Card 23 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $12.00</p>
+                <p class="collection-info">Size: Medium</p>
+                <p class="collection-info">Origin: Asia</p>
+                <div class="quantity-dropdown">
+                    <label for="quantity23">Qty:</label>
+                    <select id="quantity23" name="quantity23" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 12.00)">Add to Cart</button>
+            </div>
+            <!-- Card 24 -->
+            <div class="collection-card">
+                <video class="collection-video" autoplay loop muted>
+                    <source src="images/example.mp4" type="video/mp4">
+                </video>
+                <h3 class="collection-name">Example Fish</h3>
+                <p class="collection-info">Price: $15.00</p>
+                <p class="collection-info">Size: Large</p>
+                <p class="collection-info">Origin: Africa</p>
+                <!-- Quantity Dropdown -->
+                <div class="quantity-dropdown">
+                    <label for="quantit241">Qty:</label>
+                    <select id="quantity24" name="quantity24" class="quantity-select">
+                        <!-- Options will be generated here -->
+                    </select>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Example Fish', 15.00)">Add to Cart</button>
+            </div>
+            <!-- Additional cards can be added here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Missing Link Aquatics & Exotics. All rights reserved.</p>
+    </footer>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/quantityDropdown.js"></script>
+</body>
+
+</html>
